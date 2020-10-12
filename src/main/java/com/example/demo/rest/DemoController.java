@@ -11,6 +11,6 @@ public class DemoController {
 	@GetMapping(value = "/thymeleafTemplate")
 	public String getString(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
 		model.addAttribute("name", name);
-		return "thymeleaf";
+		return "thymeleafTemplate";
 	}
 }
